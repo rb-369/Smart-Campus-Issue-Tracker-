@@ -1,0 +1,94 @@
+.stats-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-5);
+    padding: var(--spacing-6);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stats-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stats-icon {
+    font-size: 1.75rem;
+}
+
+/* Color variations */
+.stats-card-primary .stats-icon-wrapper {
+    background: rgba(139, 92, 246, 0.15);
+}
+
+.stats-card-primary .stats-icon {
+    color: var(--primary-400);
+}
+
+.stats-card-warning .stats-icon-wrapper {
+    background: rgba(245, 158, 11, 0.15);
+}
+
+.stats-card-warning .stats-icon {
+    color: var(--status-pending);
+}
+
+.stats-card-info .stats-icon-wrapper {
+    background: rgba(59, 130, 246, 0.15);
+}
+
+.stats-card-info .stats-icon {
+    color: var(--status-progress);
+}
+
+.stats-card-success .stats-icon-wrapper {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+.stats-card-success .stats-icon {
+    color: var(--status-resolved);
+}
+
+.stats-card-gray .stats-icon-wrapper {
+    background: rgba(107, 114, 128, 0.15);
+}
+
+.stats-card-gray .stats-icon {
+    color: var(--gray-400);
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-value {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.stats-title {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-top: var(--spacing-1);
+}
+
+.stats-subtitle {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    margin-top: var(--spacing-1);
+}
